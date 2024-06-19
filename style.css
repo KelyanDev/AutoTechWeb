@@ -136,10 +136,7 @@ body::-webkit-scrollbar-thumb {
      height: 100vh;
      padding: 32px;
      background-color: rgb(0, 0, 0, 13%);
-<<<<<<< HEAD
-=======
      -webkit-backdrop-filter: blur(40px);
->>>>>>> origin/second
      backdrop-filter: blur(40px);
      display: flex;
      justify-content: flex-start;
@@ -218,10 +215,7 @@ body::-webkit-scrollbar-thumb {
      height: 50%;
      padding: 16px;
      background-color: rgb(0, 0, 0, 13%);
-<<<<<<< HEAD
-=======
      -webkit-backdrop-filter: blur(40px);
->>>>>>> origin/second
      backdrop-filter: blur(40px);
      border-radius: 16px;
      display: flex;
@@ -281,23 +275,8 @@ body::-webkit-scrollbar-thumb {
 
 /* ======================================================== */
 
-<<<<<<< HEAD
-/* === SECTION 4 ===*/
-
-.sec4 {
-     height: 100vh;
-}
-
-/* === FIN SECTION 4 === */
-
-/* ======================================================== */
-
-/* === SECTION 5 === */
-.sec5 {
-=======
 /* === SECTION 4 === */
 .sec4 {
->>>>>>> origin/second
      padding: 32px;
      display: flex;
      flex-direction: column;
@@ -305,10 +284,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .infraTitle {
-<<<<<<< HEAD
-=======
      width: -moz-fit-content;
->>>>>>> origin/second
      width: fit-content;
      padding: 16px 32px;
      background-color: var(--color-100);
@@ -409,19 +385,6 @@ body::-webkit-scrollbar-thumb {
 
 /* ==STYLE GRID== */
 
-<<<<<<< HEAD
-/* === FIN SECTION 5 === */
-
-/* ======================================================== */
-
-/* === SECTION 6 === */
-
-.sec6 {
-     height: 100vh;
-}
-
-/* === FIN SECTION 6 === */
-=======
 /* === FIN SECTION 4 === */
 
 /* ======================================================== */
@@ -433,7 +396,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* === FIN SECTION 5 === */
->>>>>>> origin/second
 
 /* ======================================================== */
 

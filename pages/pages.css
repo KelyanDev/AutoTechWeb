@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section {
-     width: 100%;
+     min-width: 100%;
      background-color: var(--color-50);
 }
 
@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section {
-     height: 100vh;
+     min-height: 100vh;
      padding: 24px;
 }
 
@@ -185,7 +185,8 @@ body::-webkit-scrollbar-thumb {
 /* === SEC3 === */
 
 .sec3 {
-     height: 100vh;
+     min-height: 100vh;
+     padding-bottom: 200px;
 }
 
 .sec3 .orgRappel {
@@ -204,6 +205,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec3 .infraTitle {
+     width: -moz-fit-content;
      width: fit-content;
      margin-top: 16px;
      padding: 16px 32px;
@@ -288,6 +290,10 @@ body::-webkit-scrollbar-thumb {
 
 .sec3 ol li {
      list-style: circle;
+}
+
+.sec3 .tab {
+     opacity: 0;
 }
 
 /* === FIN SEC3 === */

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<section class="section sec4" id="aVendre">
-     <h1 class="titleSection">A vendre</h1>
-
-=======
 <section class="section sec4" id="infrastructure">
      <h1 class="titleSection">Notre infrastructure</h1>
 
@@ -105,7 +100,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_proxy.png" alt="photo du service PROXY" />
                <h2 class="serviceTextWin">PROXY</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/proxy.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_vpn.png" alt="photo du service VPN" />
@@ -162,5 +157,4 @@
                <a href="#" class="btn">Voir les</a>
           </div>
      </div>
->>>>>>> origin/second
 </section>

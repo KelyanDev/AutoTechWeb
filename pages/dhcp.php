@@ -69,6 +69,18 @@
                </h2>
           </div>
           <p class="para">Dans un premier temps, il faut passer en super-utilisateur sur le serveur Debian</p>
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">CLI du serveur Debian</p>
+               </div>
+
+               <div class="bodyCli">
+                    <div class="formatCommande">
+                         <p class="invite">user@debian-srv:~#</p>
+                         <p class="commande">su</p>
+                    </div>
+               </div>
+          </div>
 
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
@@ -76,6 +88,20 @@
                </h2>
           </div>
           <p class="para">Une fois en super-utilisateur, il faut mettre à jour les paquets Debian</p>
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">CLI du serveur Debian</p>
+               </div>
+
+               <div class="bodyCli">
+                    <div class="formatCommande">
+                         <p class="invite">root@debian-srv:~#</p>
+                         <p class="commande">apt update</p>
+                    </div>
+               </div>
+          </div>
+          
+
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
                     Installation du paquet DHCP
@@ -88,18 +114,6 @@
                </div>
 
                <div class="bodyCli">
-                    <div class="formatCommande">
-                         <p class="invite">user@debian-srv:~#</p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">user@debian-srv:~#</p>
-                         <p class="commande">su</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">root@debian-srv:~#</p>
-                         <p class="commande">apt update</p>
-                    </div>
                     <div class="formatCommande">
                          <p class="invite">root@debian-srv:~#</p>
                          <p class="commande">apt install isc-dhcp-server</p>
@@ -123,48 +137,22 @@
                </h2>
           </div>
           <p class="para">Pour permettre au serveur d'avoir une adresse IP, nous allons d'abord la lui configurer via le fichier<span class="cmd-spec">/etc/network/interfaces</span></p>
-
           <div class="cli">
                <div class="headerCli">
-                    <p class="titleCli">CLI du Routeur</p>
+                    <p class="titleCli">/etc/network/interfaces</p>
                </div>
-
                <div class="bodyCli">
-                    <div class="formatCommande">
-                         <p class="invite">Routeur></p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">Routeur></p>
-                         <p class="commande">enable</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">Routeur#</p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">Routeur#</p>
-                         <p class="commande">conf t</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">Routeur(conf)#</p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">Routeur(conf)#</p>
-                         <p class="commande">hostname routeurAutotech</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf)#</p>
-                         <p class="commande">end</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech#</p>
-                         <p class="commande"></p>
+                    <div class="format">
+                         <p class="commande">auto enp2s0</p>
+                         <p class="commande">iface enp2s0 inet static</p>
+                         <p class="commande"> <span class="tab"> ----- </span> address 192.168.0.110/24</p>
+                         <p class="commande"> <span class="tab"> ----- </span> gateway 192.168.0.254</p>
+                         <p class="commande"> <span class="tab"> ----- </span> dns-nameservers 192.168.0.100</p>
+                         <p class="commande"> <span class="tab"> ----- </span> dns-search autotech.fr</p>
                     </div>
                </div>
           </div>
-
+          
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
                     Configuration de l'interface écouté
@@ -174,37 +162,12 @@
           <p class="para">Pour cela, il faut se rendre dans le fichier <span class="cmd-spec">/etc/default/isc-dhcp-server</span></p>
           <div class="cli">
                <div class="headerCli">
-                    <p class="titleCli">CLI du Serveur</p>
+                    <p class="titleCli">/etc/default/isc-dhcp-server</p>
                </div>
-
                <div class="bodyCli">
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech#</p>
-                         <p class="commande">conf t</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf)#</p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf)#</p>
-                         <p class="commande">int Gig0/0/0</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf-if)#</p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf-if)#</p>
-                         <p class="commande">no shut</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf-if)#</p>
-                         <p class="commande">exit</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf)#</p>
-                         <p class="commande"></p>
+                    <div class="format">
+                         <p class="commande">INTERFACESv4="enp2s0"</p>
+                         <p class="commande">INTERFACESv6=""</p>
                     </div>
                </div>
           </div>
@@ -217,41 +180,29 @@
           <p class="para">Dans le fichier <span class="cmd-spec">/etc/dhcp/dhcpd.conf</span>, on configure les différents réseaux qui seront définis dynamiquement</p>
           <div class="cli">
                <div class="headerCli">
-                    <p class="titleCli">CLI du Routeur</p>
+                    <p class="titleCli">/etc/network/interfaces</p>
                </div>
-
                <div class="bodyCli">
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech#</p>
-                         <p class="commande">conf t</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf)#</p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf)#</p>
-                         <p class="commande">int Gig0/0/1</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf-if)#</p>
-                         <p class="commande"></p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf-if)#</p>
-                         <p class="commande">no shut</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf-if)#</p>
-                         <p class="commande">ip address 172.25.0.100 255.255.0.0</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf-if)#</p>
-                         <p class="commande">exit</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">routeurAutotech(conf)#</p>
-                         <p class="commande"></p>
+                    <div class="format">
+                         <p class="commande">subnet 192.168.0.0 netmask 255.255.255.0 {</p>
+                         <p class="commande">}</p>
+                         <p class="commande">subnet 172.25.0.0 netmask 255.255.0.0 {</p>
+                         <p class="commande">}</p>
+                         <p class="commande"> <span class="tab"> ----- </span></p>
+                         <p class="commande">subnet 192.168.1.0 netmask 255.255.255.0 {</p>
+                         <p class="commande"> <span class="tab"> ----- </span> range 192.168.1.10 192.168.1.50</p>
+                         <p class="commande"> <span class="tab"> ----- </span> option routers 192.168.1.254</p>
+                         <p class="commande">}</p>
+                         <p class="commande"> <span class="tab"> ----- </span></p>
+                         <p class="commande">subnet 192.168.2.0 netmask 255.255.255.0 {</p>
+                         <p class="commande"> <span class="tab"> ----- </span> range 192.168.2.10 192.168.2.50</p>
+                         <p class="commande"> <span class="tab"> ----- </span> option routers 192.168.2.254</p>
+                         <p class="commande">}</p>
+                         <p class="commande"> <span class="tab"> ----- </span></p>
+                         <p class="commande">subnet 192.168.3.0 netmask 255.255.255.0 {</p>
+                         <p class="commande"> <span class="tab"> ----- </span> range 192.168.3.10 192.168.3.50</p>
+                         <p class="commande"> <span class="tab"> ----- </span> option routers 192.168.3.254</p>
+                         <p class="commande">}</p>
                     </div>
                </div>
           </div>
@@ -262,6 +213,17 @@
                </h2>
           </div>
           <p class="para">Toujours dans le fichier <span class="cmd-spec">/etc/dhcp/dhcpd.conf</span>, on défini le serveur DNS des équipements réseaux (Voir service DNS pour plus d'informations)</p>
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">/etc/network/interfaces</p>
+               </div>
+               <div class="bodyCli">
+                    <div class="format">
+                         <p class="commande">option domain-name-servers 192.168.0.100;</p>
+                    </div>
+               </div>
+          </div>
+
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
                     Redémarrage du service
