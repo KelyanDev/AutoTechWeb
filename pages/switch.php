@@ -32,6 +32,7 @@
 
           <img src="../assets/img/img_switch.png" alt="illustation d'un switch">
      </section>
+     <?php ?>
      <section class="section sec2">
           <img class="left" src="../assets/img/img_org.svg" alt="illustration">
           <div class="right">
