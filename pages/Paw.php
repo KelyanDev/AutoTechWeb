@@ -65,6 +65,7 @@
           <p class="para">Tout d'abord, on branche le PA sur secteur et on le réinitialise. On le connecte ensuite à un PC du réseau 192.168.0.0/24.</p>
      
      </section>
+     <?php ?>
      <section class="section sec3">
           <h1 class="titleSection">Configuration</h1>
           <ul class="orgRappel">
