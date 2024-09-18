@@ -1,6 +1,6 @@
 import { login } from "../api/api.js";
 
-function handleLogin( token, userId, name) {
+function handleLogin(token, userId, name) {
     localStorage.setItem('token', token);
     localStorage.setItem('userId', userId);
     localStorage.setItem('name', name);
@@ -19,14 +19,17 @@ async function handleSubmit(e) {
 
     try {
         const response = await login(userData);
-        handleLogin(response.token, response.userId, response.Name);
-        console.log(response);
+        handleLogin(response.token, response.userId, response.name);
+
+        // Redirection vers la page d'accueil après une connexion réussie
+        window.location.href = '../index.php';
     } catch (error) {
         console.log(error.message);
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form.containerLogin');
     form.addEventListener('submit', handleSubmit);
 });
+

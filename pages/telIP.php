@@ -64,7 +64,7 @@
                     Branchement éléctrique
                </h2>
           </div>
-          <p class="para">Les téléphone IP doivent-être alimenté via un POE, nous branchons un injecteur POE entre notre switch et la baie de brassage afin qu'il soit alimenté (un câble d'alimentation est nécessaire et doit-être branché sur une prise éléctrique).</p>
+          <p class="para">Les téléphone IP doivent-être alimentés via POE, nous branchons un injecteur POE entre notre switch et la baie de brassage afin qu'il soit alimenté (un câble d'alimentation est nécessaire et doit-être branché sur une prise éléctrique).</p>
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
                     Connexion au réseau
@@ -108,11 +108,11 @@
                     Ajout de l'utilisateur
                </h2>
           </div>
-          <p class="para"></p>
+          <p class="para">Ensuite, dans la section d'après, on indique les informations sur les utilisateurs qu'on a crée.</p>
 
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Configuration des softphone
+                    Configuration des softphones
                </h2>
           </div>
           <p class="para">Étant limité en terme d'injecteur POE, nous avons mis en place 2 softphone en plus qui font office de téléphone IP avec le logiciel <span class="cmd-spec">x-lite</span>.</p>

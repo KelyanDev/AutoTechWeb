@@ -165,3 +165,14 @@ body {
      font-weight: var(--weight-regular);
      cursor: pointer;
 }
+
+.titleCompte {
+     color: var(--color-900);
+     font-size: 40px;
+     font-weight: var(--weight-regular);
+}
+
+.titleCompte .username {
+     color: var(--color-500-primary);
+     font-weight: var(--weight-extrabold);
+}

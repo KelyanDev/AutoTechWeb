@@ -12,7 +12,7 @@
      <section class="section sec1">
           <div class="informations">
                <h1 class="title">Mini PC</h1>
-               <p class="description">Un Mini PC, est un dispositif qui permet de faire plusieurs fonction comme traiter du texte, codé, naviguer sur internet.
+               <p class="description">Un Mini PC, est un dispositif qui permet de faire plusieurs fonction comme traiter du texte, coder, naviguer sur internet.
                </p>
                <a href="#sec2" class="btn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,8 +39,8 @@
                <div class="organisation">
                     <ul class="org">
                          <h2 class="titleOrg">Installation</h2>
-                         <li>Branchement éléctriques</li>
-                         <li>Branchement périphérique</li>
+                         <li>Branchements électriques</li>
+                         <li>Branchements périphériques</li>
                     </ul>
                     <ul class="org">
                          <h2 class="titleOrg">Configuration</h2>
@@ -56,22 +56,22 @@
           <h1 class="titleSection">Installation des mini-PC</h1>
           <ul class="orgRappel">
                <h2 class="titleOrg">Rappel : Installation</h2>
-               <li>Branchement éléctriques</li>
-               <li>Branchement périphérique</li>
+               <li>Branchements électriques</li>
+               <li>Branchements périphériques</li>
           </ul>
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Branchement éléctrique
+                    Branchements électriques
                </h2>
           </div>
-          <p class="para">Les mini-PC doivent-être alimenté via une prise électrique afin qu'il fonctionne.</p>
+          <p class="para">Les mini-PC doivent-être alimentés via une prise électrique afin qu'ils fonctionnent.</p>
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Branchement périphérique
+                    Branchements périphériques
                </h2>
           </div>
           <p class="para">
-               Pour la navigation et l'accès à internet, nous branchons : <span class="cmd-spec">un clavier, une sourie, un écran et un câble ethernet</span>.
+               Pour la navigation et l'accès à internet, nous branchons : <span class="cmd-spec">un clavier, une souris, un écran et un câble ethernet</span>.
           </p>
      </section>
      <section class="section sec3">
@@ -88,7 +88,7 @@
                     Organisation
                </h2>
           </div>
-          <p class="para">Par souci de matériel, nous organisons nos 4 mini-PC de cette sorte : <span class="cmd-spec">2 serveurs (windows serveur, debian)</span> et <span class="cmd-spec">2 clients (windows 10)</span>.</p>
+          <p class="para">Par soucis de matériel, nous organisons nos 4 mini-PC de cette sorte : <span class="cmd-spec">2 serveurs (windows serveur, debian)</span> et <span class="cmd-spec">2 clients (windows 10)</span>.</p>
 
 
           <div class="infraTitle">
@@ -112,7 +112,7 @@
           <p class="para">On suit la procédure d'installation de windows 10 pour le boot, expliquer plus haut, puis la procédure d'installation de debian. Prendre la clé Linux Debian.</p>
           <p class="para">A la différence, on ne veux pas d'interface graphique pour gagner en Mémoire, pour cela on décochera l'environnement gnome et l'interface graphique à la fin de l'installation.</p>
           <p class="para">Juste après il nous demanderas si on souhaite installer gnome pour le démarrage, on coche "oui" sinon le serveur ne pourrat jamais démarrer.</p>
-          <p class="para">A la fin d'installation on enléve la clé et on redémarre.</p>
+          <p class="para">A la fin d'installation on enlève la clé et on redémarre.</p>
 
 
           <div class="infraTitle">
@@ -242,7 +242,7 @@
                     <div class="formatCommande">
                          <p class="invite">srv-linux~$</p>
                          <p class="commande">ouverture du fichier...</p>
-                         <p class="comment">% On indique dans "ipV4" le port qui recevra les requête DHCP, chez nous "ens18".</p>
+                         <p class="comment">% On indique dans "ipV4" le port qui recevra les requêtes DHCP, chez nous "ens18".</p>
                     </div>
                     <div class="formatCommande">
                          <p class="invite">srv-linux~$</p>
@@ -251,7 +251,7 @@
                     <div class="formatCommande">
                          <p class="invite">srv-linux~$</p>
                          <p class="commande">ouverture du fichier...</p>
-                         <p class="comment">% on configure les plages d'adresses, les passerelles, les dns qui seront donnée pour chaque vlans.</p>
+                         <p class="comment">% on configure les plages d'adresses, les passerelles, les dns qui seront donnés pour chaque vlans.</p>
                     </div>
                     <div class="formatCommande">
                          <p class="invite">srv-linux~$</p>
@@ -260,7 +260,7 @@
                </div>
           </div>
 
-          <p class="para">Une foix configuré, il est capable d'écouté et d'envoyé des pack de configuration.</p>
+          <p class="para">Une fois configuré, il est capable d'écouter et d'envoyer des packs de configuration.</p>
           <p class="para">Sur le pc windows, on se rend sur le powershell et on indique : <span class="cmd-spec">ipconfig /renew</span></p>
      </section>
 </body>

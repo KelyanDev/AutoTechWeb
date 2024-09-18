@@ -189,7 +189,7 @@
                     </div>
                </div>
           </div>
-          <p class="para">On configure chaque sous-interface en lui appliquant un VLAN avec l'encapsulation <span class="cmd-spec">dot1q</span> et une adresse correspondant aux vlan choisis.</p>
+          <p class="para">On configure chaque sous-interface en lui appliquant un VLAN avec l'encapsulation <span class="cmd-spec">dot1q</span> et une adresse correspondant aux vlans choisis.</p>
           <p class="para">Sous-interface 1 (vlan 1) : </p>
           <div class="cli">
                <div class="headerCli">

@@ -196,7 +196,7 @@
                     Configuration du cache
                </h2>
           </div>
-          <p class="para">Ensuite, il faut configurer le cache pour le proxy, afin que celui ci puisse stocket temporairement les données et détails de connexion</p>
+          <p class="para">Ensuite, il faut configurer le cache pour le proxy, afin que celui-ci puisse stocker temporairement les données et détails de connexion</p>
           <div class="cli">
                <div class="headerCli">
                     <p class="titleCli">/etc/squid/squid.conf</p>

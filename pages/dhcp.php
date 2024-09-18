@@ -155,7 +155,7 @@
           
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Configuration de l'interface écouté
+                    Configuration de l'interface écoutée
                </h2>
           </div>
           <p class="para">Maintenant que le serveur a une adresse IP statique, il faut que le service DHCP connaisse le port qu'il doit écouter</p>

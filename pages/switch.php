@@ -75,7 +75,7 @@
           </div>
           <p class="para">
                On branche chaque PC sur des ports du Switch qui
-               seront préalablement choisies pour chaque partie (VLAN). Aussi,
+               seront préalablement choisis pour chaque partie (VLAN). Aussi,
                on branche un câble console sur un PC pour faire la configuration
                du Switch.
           </p>

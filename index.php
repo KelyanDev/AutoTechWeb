@@ -10,14 +10,17 @@
 
 <body>
      <?php
-     require "./lib/header.php";
-     require "./layout/section1.php";
-     require "./layout/section2.php";
-     require "./layout/section3.php";
-     require "./layout/section4.php";
-     require "./layout/section5.php";
-     require "./lib/footer.php";
+     require "./lib/header.html";
+     require "./layout/section1.html";
+     require "./layout/section2.html";
+     //require "./layout/section3.php";
+     require "./layout/section4.html";
+     require "./layout/section5.html";
+     require "./layout/section6.html";
+     require "./lib/footer.html";
      ?>
+
+     <script src="./layout/script/name.js"></script>
 </body>
 
 </html>
