@@ -31,7 +31,7 @@
 
           <img src="../assets/img/img_web.png" alt="illustration d'un service DHCP">
      </section>
-
+     <?php ?>
      <section class="section sec2">
           <img class="left" src="../assets/img/img_org.svg" alt="illustration">
           <div class="right">

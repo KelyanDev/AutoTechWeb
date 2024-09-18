@@ -97,7 +97,7 @@
                     Configuration des redirections
                </h2>
           </div>
-
+          <?php ?>
           <p class="para">Nous allons configurer notre DNS pour qu'il agisse en <span class="cmd-spec">mode récursif</span> qui nous évite de configurer les 13 serveur source DNS présent dans le monde.</p>
           <p class="para">Pour faire cela :</p>
           <ul>
